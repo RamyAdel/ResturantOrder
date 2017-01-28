@@ -1,0 +1,28 @@
+body {
+
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+a {
+    color: #000000;
+}
+
+img {
+    max-width: 256px;
+    max-height: 256px;
+}
+
+.nav-pills {
+    margin-bottom: 70px;
+}
+
+.nav-pills > li.active > a,
+.btn-primary:focus {
+    background: #cccccc;
+}
+
+.nav-pills > li.active > a:hover,
+.btn-primary:hover {
+    background: #249cd3;
+}

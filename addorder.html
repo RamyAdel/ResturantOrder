@@ -1,0 +1,110 @@
+<form name="orderform" role="form" ng-controller="StoreController">
+    <div class="container-fluid">
+        <section class="container">
+            <div class="container-page">
+                <div class="col-md-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <div class="dropdown form-group col-md-6">
+                                <label>Category</label>
+
+                                <select ng-model="product.add.category"
+                                        ng-options="category for category in [Dessert,SEAFOOD,MEAT DISHES]"
+                                        title="category">
+                                    <option value="1">Dessert</option>
+                                    <option value="2">SEAFOOD</option>
+                                    <option value="3">MEAT DISHES</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-4 form-inline">
+                                <input type="checkbox" class="checkbox"/>Combo - add 2 LE
+                            </div>
+
+                            <div class="col-sm-4 form-inline">
+                                <input type="checkbox" class="checkbox"/>Spicy - add 1 LE
+                            </div>
+
+                            <div class="dropdown form-group col-md-8">
+                                <label>Meal</label>
+
+                                <select ng-model="product.add.category"
+                                        ng-options="category for category in [Dessert,SEAFOOD,MEAT DISHES]"
+                                        title="category">
+                                    <option value="1">Dessert</option>
+                                    <option value="2">SEAFOOD</option>
+                                    <option value="3">MEAT DISHES</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group form-inline col-md-6">
+                                <label>q</label>
+                                <input type="" name="" class="form-control" style="margin-left: 52px;" id="" value="">
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <label>{{product.price}} LE</label>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row col-md-12">
+                                <button type="submit" class="btn btn-primary" style="float: right;">Add</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+    </div>
+
+    <div class="container-fluid">
+        <section class="container">
+            <div class="container-page">
+                <div class="col-md-12" style="background-color: #D3D3D3;">
+
+                    <table class="table table-bordered" style="background-color: #FFFFFF; margin-top: 15px;">
+                        <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Q</th>
+                            <th>Price</th>
+                            <th>Addons</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row" style="height: 15px;"></th>
+                            <td>{{}}</td>
+                            <td>{{}}</td>
+                            <td>{{}}</td>
+                            <td>{{}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="height: 70px;"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+                    <div class="row col-md-12">
+                        <label style="float: right;"> {{product.price}}Total </label>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</form>

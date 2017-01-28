@@ -1,0 +1,57 @@
+<section class="container">
+        <div class="container-page">
+            <div class="col-md-6">
+                <form name="addForm " role="form" ng-controller="addController as foods" ng-submit="addFood(product)"
+                      novalidate>
+                    <div class="form-group col-lg-12">
+                        <label>Name</label>
+                        <input ng-model="product.add.name" type="text" class="form-control" value="the name of meal "
+                               required="required">
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                        <label>Price</label>
+                        <input ng-model="product.add.price" type="number" class="form-control" value=" price"
+                               required="required">
+                    </div>
+
+
+                    <div class="form-group col-lg-12">
+                        <label>Description</label>
+                        <textarea ng-model="product.add.description" type="textarea" class="form-control"
+                                  value="plz enter description"></textarea>
+                    </div>
+
+                    <div class="dropdown form-group col-md-6">
+                        <label>Category</label>
+                        <select ng-model="product.add.category" class="form-control"
+                                ng-options="category for category in [Dessert,SEAFOOD,MEAT DISHES]" title="category">
+                            <option value="1">Dessert</option>
+                            <option value="2">SEAFOOD</option>
+                            <option value="3">MEAT DISHES</option>
+                        </select>
+                    </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <img src="images/img1.png" ng-src="{{filepreview}}" class="img-responsive center-block" alt="Responsive image">
+                <input class="btn btn-primary center-block" type="file" fileinput="file" filepreview="filepreview"/>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <button class="btn btn-primary form-control center-block" type="button">Save</button>
+        </div>
+    </div>
+</div>
+</form>

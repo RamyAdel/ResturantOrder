@@ -1,0 +1,20 @@
+<section>
+  <!--  Tab Navigation  -->
+  <ul class="nav nav-pills">
+    <li ng-class="{ active:tab.isSet(1) }">
+      <a href="" ng-click="tab.setTab(1)">Add Meal</a>
+    </li>
+    <li ng-class="{ active:tab.isSet(2) }">
+      <a href="" ng-click="tab.setTab(2)">Add Order</a>
+    </li>
+    <li ng-class="{ active:tab.isSet(3) }">
+      <a href="" ng-click="tab.setTab(3)">Reports</a>
+    </li>
+  </ul>
+  <!--  Add Meal Tab's Content  -->
+  <addmeal ng-show="tab.isSet(1)"></addmeal>
+  <!--  Add Order Tab's Content  -->
+  <addorder ng-show="tab.isSet(2)"></addorder>
+  <!--  Reports Tab's Content  -->
+  <reports ng-show="tab.isSet(3)"></reports>
+</section>
